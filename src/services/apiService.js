@@ -18,9 +18,9 @@ api.interceptors.response.use(
     return response;
   },
   (error) => {
-    console.log(error.response);
     if (error.response.status === 404) {
       router.push({ name: "NotFound" });
+      throw new Error();
     }
 
     return error;

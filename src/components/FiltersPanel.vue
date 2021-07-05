@@ -29,24 +29,7 @@ import { AVAILABLE_FILTERS } from "../constants";
 export default {
   data() {
     return {
-      availableFilters: [
-        {
-          id: 1,
-          name: "All",
-        },
-        {
-          id: 2,
-          name: "Human",
-        },
-        {
-          id: 3,
-          name: "Animal",
-        },
-        {
-          id: 4,
-          name: "Alien",
-        },
-      ],
+      availableFilters: AVAILABLE_FILTERS,
       activeFilter: null,
       searchValue: "",
     };

@@ -2,16 +2,19 @@
   <div>
     <Navigation />
     <router-view :key="$route.fullPath" />
+    <NotificationsContainer />
   </div>
 </template>
 
 <script>
 import Navigation from "@/components/Navigation";
+import NotificationsContainer from "@/components/NotificationsContainer.vue";
 import actions from "@/store/actions";
 
 export default {
   components: {
     Navigation,
+    NotificationsContainer,
   },
   mounted() {
     this.$store.dispatch(actions.FETCH_FAVOURITES);

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="page-container">
     <h1>Oops, page not found</h1>
   </div>
 </template>
@@ -9,7 +9,7 @@ export default {};
 </script>
 
 <style scoped>
-.container {
+.page-container {
   display: grid;
   justify-content: center;
   margin-top: 20px;

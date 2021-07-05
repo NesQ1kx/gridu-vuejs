@@ -44,12 +44,6 @@ import CharacterNotFound from "@/components/CharacterNotFound.vue";
 import { mapGetters, mapState } from "vuex";
 
 export default {
-  // props: {
-  //   page: {
-  //     type: String,
-  //     required: true,
-  //   }
-  // },
   components: {
     FiltersPanel,
     CharacterCard,
